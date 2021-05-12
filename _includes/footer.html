@@ -1,5 +1,14 @@
 <footer>
-  <div class="container">
-    &copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.
+  <div class="container spacer">
+    <div class="col-md-12">
+      <img class="mx-auto d-block" src="/assets/images/logo.png" width="512" alt="">
+    </div>
+
+    <div class="col-md-12">
+      {% include nav_items.html %}
+    </div>
+    <div class="container">
+      &copy; {{ site.title }} {{ site.time | date: "%Y" }}. All rights reserved.
+    </div>
   </div>
 </footer>

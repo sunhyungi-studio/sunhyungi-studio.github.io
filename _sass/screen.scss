@@ -1,4 +1,6 @@
 $header-bg: #fff1ee;
+$bg2: #FCE8E4;
+// $header-bg: #DBCEB6;
 $btn-color: #996666;
 
 $white: #fff;
@@ -11,12 +13,12 @@ body {
 }
 
 header {
-  background: $header-bg;
+  background-color: $header-bg;
 }
 
 main {
 
-  h1 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
   }
 
@@ -37,4 +39,28 @@ main {
       color: $gray;
     }
   }
+
+  #newsletter {
+    background-color: $bg2;
+    padding-top: 10rem;
+    text-align: center;
+    padding-bottom: 8rem;
+
+    h2 { font-weight: 700; }
+  }
+}
+
+.spacer {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+footer {
+  background-color: $header-bg;
+  background-image: url('/assets/images/bottom.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+
 }
