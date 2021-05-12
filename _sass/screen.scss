@@ -1,14 +1,24 @@
 $header-bg: #fff1ee;
+$btn-color: #996666;
 
 $white: #fff;
 $gray: #333;
 
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
 
 header {
   background: $header-bg;
 }
 
 main {
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+  }
 
   .jumbotron {
     color: $white;
@@ -17,5 +27,14 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+  }
+
+  .btn-purchase {
+    background-color: $btn-color;
+    color: $white;
+    &:hover {
+      background-color: lighten($btn-color, 40%);
+      color: $gray;
+    }
   }
 }
