@@ -1,13 +1,39 @@
 ---
 layout: page
 ---
+<div class="">
+  <h1>FAQ</h1>
+  <p>blurb about care and whatnot</p>
+</div>
 
-# What is the best way to wash my ceramics?
+{%- assign count = 0 -%}
 
-# How should I store my ceramics?
+<div class="accordion" id="faq">
+  {%- for faq in site.data.questions -%}
 
-# Are my ceramics "microwave safe"?
+    {%- assign count = count | plus: 1 -%}
+    {%- assign js_id = count | prepend: 'collapse' -%}
+    {%- if count == 1 -%}
+      {%- assign button_class = 'accordion-button' -%}
+      {%- assign body_class = 'accordion-collapse collapse show' -%}
+      {%- assign expanded = true -%}
+    {%- else -%}
+      {%- assign button_class = 'accordion-button collapsed' -%}
+      {%- assign body_class = 'accordion-collapse collapse' -%}
+      {%- assign expanded = false -%}
+    {%- endif -%}
 
-# Are your glazes food safe?
-
-# How do I prevent damage to ceramics?
+  <div class="accordion-item">
+      <h2 class="accordion-header" id="heading{{ count }}">
+        <button class="{{ button_class }}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ js_id }}" aria-expanded="{{ expanded }}" aria-controls="{{ js_id }}">
+          {{ faq.question }}
+        </button>
+      </h2>
+      <div id="{{ js_id }}" class="{{ body_class }}" aria-labelledby="{{ js_id }}" data-bs-parent="#faq">
+      <div class="accordion-body">
+        {{ faq.answer }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
