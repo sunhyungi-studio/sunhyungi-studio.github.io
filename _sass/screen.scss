@@ -1,7 +1,15 @@
-$header-bg: #fff1ee;
-$bg2: #FCE8E4;
-// $header-bg: #DBCEB6;
-$btn-color: #996666;
+// $bg-primary: #fff1ee;
+// $bg-secondary: #FCE8E4;
+// $bg-primary: #DBCEB6;
+// $btn-color: #996666;
+
+// color swatch https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373
+$bg-primary: #fefae0;
+$bg-secondary: #e9edc9;
+$btn-color: #D4A373;
+$bg-3: #ccd5ae;
+$color4: #e9edc9;
+
 
 $white: #fff;
 $gray: #333;
@@ -13,7 +21,7 @@ body {
 }
 
 header {
-  background-color: $header-bg;
+  background-color: $bg-primary;
 }
 
 main {
@@ -46,7 +54,7 @@ main {
   }
 
   #newsletter {
-    background-color: $bg2;
+    background-color: $bg-secondary;
     padding-top: 10rem;
     text-align: center;
     padding-bottom: 8rem;
@@ -61,7 +69,7 @@ main {
 }
 
 footer {
-  background-color: $header-bg;
+  background-color: $bg-primary;
   background-image: url('/assets/images/bottom.png');
   background-position: center;
   background-repeat: no-repeat;
