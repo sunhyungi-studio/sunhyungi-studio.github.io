@@ -16,10 +16,9 @@
   <script src="https://kit.fontawesome.com/edab0e178c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' }}">
 
-  {% if page.print_stylesheet %}
+  {%- if page.print_stylesheet -%}
       <link rel="stylesheet" media="print" href="{{ '/assets/css/print.css' }}">
-  {% endif %}
-
+  {%- endif -%}
 
   <meta name="theme-color" content="#fafafa">
   {% seo %}
