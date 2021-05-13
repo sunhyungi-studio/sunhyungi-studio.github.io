@@ -22,6 +22,11 @@ main {
     font-family: 'Playfair Display', serif;
   }
 
+  #about {
+    background: url('/assets/images/vase.png') no-repeat right center;
+
+  }
+
   .jumbotron {
     color: $white;
     background-image: url("https://source.unsplash.com/t9sRlYIzfIQ/1600x900");
