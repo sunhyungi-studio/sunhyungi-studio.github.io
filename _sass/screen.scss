@@ -4,15 +4,31 @@
 // $btn-color: #996666;
 
 // color swatch https://coolors.co/ccd5ae-e9edc9-fefae0-faedcd-d4a373
-$bg-primary: #fefae0;
-$bg-secondary: #e9edc9;
-$btn-color: #D4A373;
-$bg-3: #ccd5ae;
-$color4: #e9edc9;
+$pale-spring-bud: #ccd5aeff;
+$light-goldenrod-yellow: #e9edc9ff;
+$cornsilk: #fefae0ff;
+$papaya-whip: #faedcdff;
+$fawn: #d4a373ff;
 
+// color swatch from https://coolors.co/cb997e-ddbea9-ffe8d6-b7b7a4-a5a58d-6b705c
+$antique-brass: #cb997eff;
+$desert-sand: #ddbea9ff;
+$champagne-pink: #ffe8d6ff;
+$ash-gray: #b7b7a4ff;
+$artichoke: #a5a58dff;
+$ebony: #6b705cff;
+
+// set colors
+
+$bg-primary: $cornsilk;
+$bg-secondary: $light-goldenrod-yellow;
+$bg-3: $pale-spring-bud;
+$btn-color: $fawn;
 
 $white: #fff;
 $gray: #333;
+
+$link-dark: #212529;
 
 body {
   font-family: Montserrat, sans-serif;
@@ -22,6 +38,18 @@ body {
 
 header {
   background-color: $bg-primary;
+
+  .nav {
+    a{
+      &:link {
+        color: $link-dark;
+        text-decoration: underline;
+      }
+      // &:hover {
+      //   font-size: 18px;
+      // }
+    }
+  }
 }
 
 main {
