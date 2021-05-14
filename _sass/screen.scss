@@ -44,6 +44,10 @@ body {
 header {
   background-color: $bg-primary;
 
+  .dark-link {
+    color: $link-dark;
+  }
+
   .nav {
     a{
       &:link {
@@ -65,7 +69,6 @@ main {
 
   #about {
     background: url('/assets/images/vase.png') no-repeat right center;
-
   }
 
   .jumbotron {
@@ -107,6 +110,6 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 40vh;
+  // height: 100vh;
 
 }
