@@ -37,6 +37,10 @@ main {
     background: url('/assets/images/vase.png') no-repeat right center;
   }
 
+  .bg-gray {
+    background-color: $bg-gray;
+  }
+
   .jumbotron {
     color: $white;
     background-image: url("https://source.unsplash.com/t9sRlYIzfIQ/1600x900");
