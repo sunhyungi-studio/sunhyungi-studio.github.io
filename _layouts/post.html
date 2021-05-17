@@ -1,3 +1,48 @@
 ---
 layout: default
 ---
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    {% if page.background %}
+    <header class="masthead" style="background-image: url('{{ page.background }}');">
+      <div class="overlay">&nbsp;</div>
+    {% else %}
+    <header class="post-header">
+    {% endif %}
+
+      <div class="container">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        </div>
+
+        <p class="post-meta">
+          {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+          <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {{ page.date | date: date_format }}
+          </time>
+          &middot;
+          {%- if page.modified_date -%}
+          ~
+          {%- assign mdate = page.modified_date | date_to_xmlschema -%}
+          <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
+            {{ mdate | date: date_format }}
+          </time>
+          &middot;
+          {%- endif -%}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">{{ site.author }}</span>
+          </span>
+          &middot; {% include read_time.html content=page.content %}
+        </p>
+      </div>
+
+      </header>
+
+      <div class="container">
+        <div class="post-content e-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+        <a class="u-url" href="{{ page.url | relative_url}}" hidden></a>
+      </div>
+</article>
