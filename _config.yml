@@ -20,7 +20,7 @@
 
 title: sunghyungi studio
 email: your-email@example.com
-author: sunghyungi 
+author: sunghyungi
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -31,6 +31,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 google_analytics: ''
 storelink: https://www.etsy.com/shop/sunhyungistudio
+mailchimp-url: https://gmail.us1.list-manage.com/subscribe/post?u=21df472cab85ca442817472f0&amp;id=0e54f9a6cf
 
 date_format: "%b %-d, %Y"
 
