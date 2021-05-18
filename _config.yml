@@ -38,9 +38,8 @@ date_format: "%b %-d, %Y"
 # https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 social:
   name: sunhyungistudio
-  links:
-    - https://www.instagram.com/sunhyungistudio
   instagram: sunhyungistudio
+  contact_form: https://us1.list-manage.com/contact-form?u=21df472cab85ca442817472f0&form_id=da37ce5d765eb92083a9fa37d4d9a561
 
 webmaster_verifications:
   google: 1234

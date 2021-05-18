@@ -10,10 +10,13 @@
     <div class="col-md-3 text-end">
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 mt-md-2">
         {%- if site.social.instagram -%}
-        <li><a class="dark-link" rel="noopener" target="_blank" href="https://www.instagram.com/{{ site.social.instagram | cgi_escape | escape }}" title="{{ site.social.instagram | escape }}"><i class="fab fa-instagram"></i></a></li>
+          <li><a class="dark-link" rel="noopener" target="_blank" href="https://www.instagram.com/{{ site.social.instagram | cgi_escape | escape }}" title="{{ site.social.instagram | escape }}"><i class="fab fa-instagram"></i></a></li>
         {%- endif -%}
-        <!-- {%- if site.social.facebook -%}<li><i class="fab fa-facebook-f"></i></li>{% endif %}
-        {%- if site.social.twitter -%}<li><i class="fab fa-twitter"></i></li>{% endif %} -->
+        {%- if site.social.contact_form -%}
+          <li><a class="dark-link" rel="noopener" target="_blank" href="{{ site.social.contact_form }}"><i class="far fa-envelope"></i></a></li>
+        {%- endif -%}
+        {%- if site.social.facebook -%}<li><i class="fab fa-facebook-f"></i></li>{% endif %}
+        {%- if site.social.twitter -%}<li><i class="fab fa-twitter"></i></li>{% endif %}
       </ul>
     </div>
   </header>
